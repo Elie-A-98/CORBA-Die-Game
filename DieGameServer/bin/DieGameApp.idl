@@ -1,0 +1,14 @@
+module DieGameApp {
+	
+	//Player
+	interface PlayerInt {
+		void callback (in string msg);
+	};
+	
+	//Server
+	interface ServerInt {
+		long MRandom (in string player_name);
+		void RegisterCallback (in PlayerInt player);
+	};
+	
+};
